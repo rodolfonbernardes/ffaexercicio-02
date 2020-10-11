@@ -35,9 +35,9 @@ export default {
   },
   watch: {
     "product.name"() {
-      if (this.product.name.length > 30) {
+      if (this.product.name.length > 15) {
         this.isNameLimitExceeded = true;
-        this.product.nameError = "Nome não pode ser superior a 30 caracteres.";
+        this.product.nameError = "Nome não pode ser superior a 15 caracteres.";
       } else {
         this.isNameLimitExceeded = false;
         this.product.nameError = "";
